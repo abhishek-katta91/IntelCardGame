@@ -19,8 +19,8 @@ export class CardServiceService {
 
   constructor(private httpClient: HttpClient) {
     this.initialize();
-    this.sortApiUrl = "https://localhost:44369/api/card/sort";
-    //this.sortApiUrl = "https://cardsortgame.azurewebsites.net/api/card/sort";
+    //this.sortApiUrl = "https://localhost:44369/api/card/sort";
+    this.sortApiUrl = "https://cardsortgame.azurewebsites.net/api/card/sort";
   }
 
   public initialize(): void {
