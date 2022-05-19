@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akatc03925\\source\\repos\\CardGameAPI\\CardGameAPI.csproj": {}
+    "C:\\Development\\Intel\\IntelCardGameMaster\\CardGameAPI\\CardGameAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akatc03925\\source\\repos\\CardGameAPI\\CardGameAPI.csproj": {
+    "C:\\Development\\Intel\\IntelCardGameMaster\\CardGameAPI\\CardGameAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akatc03925\\source\\repos\\CardGameAPI\\CardGameAPI.csproj",
+        "projectUniqueName": "C:\\Development\\Intel\\IntelCardGameMaster\\CardGameAPI\\CardGameAPI.csproj",
         "projectName": "CardGameAPI",
-        "projectPath": "C:\\Users\\akatc03925\\source\\repos\\CardGameAPI\\CardGameAPI.csproj",
+        "projectPath": "C:\\Development\\Intel\\IntelCardGameMaster\\CardGameAPI\\CardGameAPI.csproj",
         "packagesPath": "C:\\Users\\akatc03925\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akatc03925\\source\\repos\\CardGameAPI\\obj\\",
+        "outputPath": "C:\\Development\\Intel\\IntelCardGameMaster\\CardGameAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
