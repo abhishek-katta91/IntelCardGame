@@ -3,7 +3,7 @@
     <mat-card-title>Your Cards</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <div fxLayout='row wrap' fxLayoutGap="10px" class='card-layout'>
+    <div fxLayout='row wrap' fxLayoutGap="10px">
       <div *ngFor="let card of cardService.cards" fxFlex="90px">
         <mat-card class="card">
           <div class="card-name">{{card.name}}</div>
@@ -17,7 +17,8 @@
     <button mat-raised-button color='primary' (click)="cardService.SortCards()">Sort</button>
   </mat-card-actions>
   <mat-card-content>
-    <div fxLayout='row wrap' fxLayoutGap="10px" class='card-layout'>
+    <div fxLayout='row wrap' fxLayoutGap="10px">
+      <div *ngIf = "cardService.NotDrawn" style="color: red;">Please First Draw the Cards from the Deck to Sort</div>
       <div *ngFor="let card of cardService.sortedCards" fxFlex="90px">
         <mat-card class="card">
           <div class="card-name">{{card}}</div>
