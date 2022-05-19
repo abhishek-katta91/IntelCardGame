@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/17d31cff-f41d-4184-8e61-52d6ef63a05e/resourceGroups/CardSortGame/providers/Microsoft.Web/sites/sortmycards",
+    "appService.deploySubpath": "."
+}
