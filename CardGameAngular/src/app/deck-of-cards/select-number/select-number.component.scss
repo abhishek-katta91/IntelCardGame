@@ -1,0 +1,23 @@
+.mat-card {
+  margin: 20px;
+
+  .mat-card-content {
+    margin: 0;
+  }
+
+  .mat-card-actions {
+    margin: 0;
+  }
+}
+
+
+.mat-form-field,
+.mat-slider {
+  width: 100%;
+}
+
+.slider-range {
+  line-height: 48px;
+  text-align: center;
+}
+

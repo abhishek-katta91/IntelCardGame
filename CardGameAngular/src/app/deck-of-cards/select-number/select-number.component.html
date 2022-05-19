@@ -1,0 +1,25 @@
+<mat-card class='filtering-card'>
+  <mat-card-header>
+    <mat-card-title>Card count Selection</mat-card-title>
+    <mat-card-subtitle>Choose the number of cards to be drawn and click on the draw button to draw your cards.</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div fxLayout="row" fxLayout.lt-md='column' class='filtering'>
+      <div>
+        <mat-card class='selection-option-card'>
+          <mat-card-subtitle>Number of Cards ({{cardService.numberOfCards}})</mat-card-subtitle>
+          <div fxLayout='row'>
+            <div fxFlex='80'>
+              <input matInput type = 'number' color="primary" [min]='1' [max]='57'
+                 [(ngModel)]='cardService.numberOfCards'>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color='primary' (click)="cardService.draw(cardService.numberOfCards)">Draw</button>
+    <button mat-raised-button (click)="cardService.initialize()">Reset</button>
+  </mat-card-actions>
+</mat-card>
